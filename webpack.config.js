@@ -8,5 +8,13 @@ module.exports = {
     output: {
         filename: 'main.js',
         path: path.resolve(__dirname,'./dist')
+    },
+
+    devServer: {
+        contentBase: path.resolve(__dirname), // index.html not needed to specify?
+        // this is a URL and always have a forward slash. can use single or double dots for URLs
+        publicPath: '/dist'
     }
+
+
 };
